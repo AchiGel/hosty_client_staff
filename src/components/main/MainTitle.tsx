@@ -7,7 +7,7 @@ const MainTitle = () => {
           <span className="text-gray-500">/</span>
           <span className="text-gray-900 font-medium">Requests</span>
         </div>
-        <h1 className="text-4xl font-bold text-gray-900 tracking-tight mt-1">
+        <h1 className="text-4xl font-bold text-gray-900 tracking-tight mt-1 font-playfair">
           My Department
         </h1>
         <p className="text-gray-500 mt-1">
