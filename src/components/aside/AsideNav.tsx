@@ -1,11 +1,18 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const AsideNav = () => {
+  const baseClasses =
+    "flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors group";
+
+  const activeClasses = "bg-[#c5a667]/10 text-[#c5a667]";
+  const inactiveClasses = "text-gray-500 hover:bg-gray-50";
   return (
     <nav className="flex-1 px-4 space-y-1 overflow-y-auto">
-      <Link
+      <NavLink
         to={"/"}
-        className="flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors group text-gray-500 hover:bg-gray-50"
+        className={({ isActive }) =>
+          `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`
+        }
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -25,10 +32,12 @@ const AsideNav = () => {
           <rect width="7" height="5" x="3" y="16" rx="1"></rect>
         </svg>
         <span className="text-sm font-medium">Dashboard</span>
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to={"/my-tasks"}
-        className="flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors group bg-[#c5a667]/10 text-[#c5a667]"
+        className={({ isActive }) =>
+          `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`
+        }
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +49,7 @@ const AsideNav = () => {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="lucide lucide-clipboard-list w-5.5 h-5.5 transition-colors text-[#c5a667]"
+          className="lucide lucide-clipboard-list w-5.5 h-5.5 transition-colors group-hover:text-[#c5a667]"
         >
           <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
           <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
@@ -53,7 +62,7 @@ const AsideNav = () => {
         <span className="ml-auto bg-[#c5a667] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">
           5
         </span>
-      </Link>
+      </NavLink>
     </nav>
   );
 };
