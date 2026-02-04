@@ -282,7 +282,7 @@ export const MY_TASK_TABLE_REQUEST_ROW = [
       submittedAgo: "5m ago",
       timeRemaining: "25m",
     },
-    status: "New",
+    status: "Assigned",
     actions: {
       canPause: false,
       canComplete: true,
@@ -348,120 +348,10 @@ export const MY_TASK_TABLE_REQUEST_ROW = [
       submittedAgo: "2m ago",
       timeRemaining: "58m",
     },
-    status: "New",
+    status: "Assigned",
     actions: {
       canPause: false,
       canComplete: true,
-      hasMenu: true,
-    },
-  },
-  {
-    id: "req_006",
-    room: {
-      number: "319",
-      type: "Standard",
-    },
-    request: {
-      title: "Extra blankets",
-      description: "Guest requested 1 extra blanket.",
-      priority: "low",
-    },
-    timing: {
-      submittedAgo: "18m ago",
-      timeRemaining: "12m",
-    },
-    status: "In Progress",
-    actions: {
-      canPause: true,
-      canComplete: true,
-      hasMenu: true,
-    },
-  },
-  {
-    id: "req_007",
-    room: {
-      number: "725",
-      type: "Suite",
-    },
-    request: {
-      title: "Late checkout",
-      description: "Guest requesting checkout extension until 2 PM.",
-      priority: "medium",
-    },
-    timing: {
-      submittedAgo: "1m ago",
-      timeRemaining: "29m",
-    },
-    status: "New",
-    actions: {
-      canPause: false,
-      canComplete: true,
-      hasMenu: true,
-    },
-  },
-  {
-    id: "req_008",
-    room: {
-      number: "102",
-      type: "Standard",
-    },
-    request: {
-      title: "Housekeeping",
-      description: "Full room cleaning requested.",
-      priority: "high",
-    },
-    timing: {
-      submittedAgo: "45m ago",
-      timeRemaining: "5m",
-    },
-    status: "Completed",
-    actions: {
-      canPause: false,
-      canComplete: false,
-      hasMenu: true,
-    },
-  },
-  {
-    id: "req_009",
-    room: {
-      number: "527",
-      type: "Deluxe",
-    },
-    request: {
-      title: "Ice delivery",
-      description: "Guest needs ice bucket refilled.",
-      priority: "low",
-    },
-    timing: {
-      submittedAgo: "3m ago",
-      timeRemaining: "27m",
-    },
-    status: "New",
-    actions: {
-      canPause: false,
-      canComplete: true,
-      hasMenu: true,
-    },
-  },
-  {
-    id: "req_010",
-    room: {
-      number: "412",
-      type: "Suite",
-    },
-    request: {
-      title: "Mini bar restock",
-      description: "Complete minibar restock needed.",
-      priority: "medium",
-    },
-    timing: {
-      submittedAgo: "1h ago",
-      timeRemaining: "0m",
-    },
-    status: "Completed",
-    actions: {
-      canPause: false,
-      canComplete: false,
       hasMenu: true,
     },
   },

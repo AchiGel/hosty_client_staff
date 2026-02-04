@@ -49,7 +49,9 @@ const MainTableRow = ({
         <span className="text-sm font-medium text-red-600">{submittedAgo}</span>
       </td>
       <td className="py-4 px-6">
-        <span className="inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-700 border border-blue-200">
+        <span
+          className={`inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-bold ${status == "New" || status == "Assigned" ? "text-[#c5a667] bg-[#c5a66733] border-[#c5a66733]" : status == "Completed" ? "text-[#15803d] bg-[#f0fdf4] border-[#bbf7d0]" : "bg-blue-100 text-blue-700 border border-blue-200"}`}
+        >
           {status}
         </span>
       </td>
