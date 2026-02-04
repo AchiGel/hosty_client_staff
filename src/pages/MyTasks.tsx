@@ -4,6 +4,8 @@ import MainTable from "../components/main/MainTable";
 import MainTitle from "../components/main/MainTitle";
 import { FILTER_BUTTONS } from "../constants/filterButtons";
 import { MY_TASKS_REQUESTS } from "../constants/requests";
+import { MY_TASKS_TABLE_HEADER } from "../constants/tableHeader";
+import { MY_TASK_TABLE_REQUEST_ROW } from "../constants/tableRequest";
 
 const MyTasks = () => {
   return (
@@ -35,7 +37,10 @@ const MyTasks = () => {
           />
         ))}
       </div>
-      <MainTable />
+      <MainTable
+        tableData={MY_TASKS_TABLE_HEADER}
+        tableRowData={MY_TASK_TABLE_REQUEST_ROW}
+      />
     </div>
   );
 };

@@ -4,6 +4,8 @@ import MainTable from "../components/main/MainTable";
 import MainTitle from "../components/main/MainTitle";
 import { FILTER_BUTTONS } from "../constants/filterButtons";
 import { DASHBOARD_REQUESTS } from "../constants/requests";
+import { DASHBOARD_TABLE_HEADER } from "../constants/tableHeader";
+import { DASHBOARD_TABLE_REQUEST_ROW } from "../constants/tableRequest";
 
 const Home = () => {
   return (
@@ -35,7 +37,10 @@ const Home = () => {
           />
         ))}
       </div>
-      <MainTable />
+      <MainTable
+        tableData={DASHBOARD_TABLE_HEADER}
+        tableRowData={DASHBOARD_TABLE_REQUEST_ROW}
+      />
     </div>
   );
 };
