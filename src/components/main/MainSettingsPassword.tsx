@@ -1,5 +1,31 @@
+import MainSettingTitle from "./MainSettingTitle";
+
 const MainSettingsPassword = () => {
-  return <div>MainSettingsPassword</div>;
+  return (
+    <div className="rounded-lg border border-[#dcdfe5] bg-white text-[#0f1729] shadow-sm">
+      <MainSettingTitle
+        icon={
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-lock h-5 w-5"
+          >
+            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        }
+        title={"პაროლის შეცვლა"}
+        description={"უსაფრთხოებისთვის რეგულარულად შეცვალეთ პაროლი"}
+      />
+    </div>
+  );
 };
 
 export default MainSettingsPassword;

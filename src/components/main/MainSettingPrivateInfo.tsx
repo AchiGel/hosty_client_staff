@@ -1,8 +1,10 @@
+import MainSettingTitle from "./MainSettingTitle";
+
 const MainSettingPrivateInfo = () => {
   return (
     <div className="rounded-lg border border-[#dcdfe5] bg-white text-[#0f1729] shadow-sm">
-      <div className="flex flex-col space-y-1.5 p-6">
-        <h3 className="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2">
+      <MainSettingTitle
+        icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -18,12 +20,10 @@ const MainSettingPrivateInfo = () => {
             <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
             <circle cx="12" cy="7" r="4"></circle>
           </svg>
-          პირადი ინფორმაცია
-        </h3>
-        <p className="text-sm text-[#676f7e]">
-          განაახლეთ თქვენი საკონტაქტო მონაცემები
-        </p>
-      </div>
+        }
+        title={"პირადი ინფორმაცია"}
+        description={"განაახლეთ თქვენი საკონტაქტო მონაცემები"}
+      />
       <div className="p-6 pt-0 space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="space-y-2">
