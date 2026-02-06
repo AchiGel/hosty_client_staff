@@ -5,7 +5,7 @@ const AsideFooter = () => {
     <div className="p-4 mt-auto border-t border-gray-200">
       <Link
         to={"/settings"}
-        className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-500 hover:bg-gray-50 transition-colors group"
+        className="flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors group text-gray-500 hover:bg-gray-50"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -24,18 +24,7 @@ const AsideFooter = () => {
         </svg>
         <span className="text-sm font-medium">პარამეტრები</span>
       </Link>
-      <Link
-        to={"/user"}
-        className="mt-4 flex items-center gap-3 px-3 pt-2 hover:bg-gray-50 rounded-lg transition-colors"
-      >
-        <div className="h-9 w-9 rounded-full bg-cover bg-center border-2 border-white shadow-sm bg-[#c5a667]/20 flex items-center justify-center text-[#c5a667] font-semibold text-sm">
-          U
-        </div>
-        <div className="flex flex-col flex-1">
-          <p className="text-sm font-semibold text-gray-900">User</p>
-          <p className="text-xs text-gray-500">Housekeeping</p>
-        </div>
-      </Link>
+
       <button className="mt-2 w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-red-500 hover:bg-red-50 transition-colors group">
         <svg
           xmlns="http://www.w3.org/2000/svg"

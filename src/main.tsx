@@ -10,8 +10,8 @@ import {
 import Home from "./pages/Home.tsx";
 import MyTasks from "./pages/MyTasks.tsx";
 import Settings from "./pages/Settings.tsx";
-import User from "./pages/User.tsx";
 import App from "./App.tsx";
+import Team from "./pages/Team.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,7 +19,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="/my-tasks" element={<MyTasks />} />
       <Route path="/settings" element={<Settings />} />
-      <Route path="/user" element={<User />} />
+      <Route path="/team" element={<Team />} />
     </Route>,
   ),
 );
