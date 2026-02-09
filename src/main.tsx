@@ -12,15 +12,21 @@ import MyTasks from "./pages/MyTasks.tsx";
 import Settings from "./pages/Settings.tsx";
 import App from "./App.tsx";
 import Team from "./pages/Team.tsx";
+import Login from "./pages/Login.tsx";
+import Registration from "./pages/Registration.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />}>
-      <Route index element={<Home />} />
-      <Route path="/my-tasks" element={<MyTasks />} />
-      <Route path="/settings" element={<Settings />} />
-      <Route path="/team" element={<Team />} />
-    </Route>,
+    <>
+      <Route path="/login" element={<Login />} />
+      <Route path="/registration" element={<Registration />} />
+      <Route path="/" element={<App />}>
+        <Route index element={<Home />} />
+        <Route path="/my-tasks" element={<MyTasks />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/team" element={<Team />} />
+      </Route>
+    </>,
   ),
 );
 
